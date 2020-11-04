@@ -20,9 +20,9 @@ jobs:
           password: ${{ secrets.CR_PAT }}
       - name: Build container image
         run:
-          docker build -t ghcr.io/${{ github.repository_owner }}/hello:$VERSION .
+          docker build -t ghcr.io/${{ github.repository_owner }}/kis2020-demo-application:$VERSION .
       - name: Push container image
         run: |
-          docker push ghcr.io/${{ github.repository_owner }}/hello:$VERSION
-          docker tag ghcr.io/${{ github.repository_owner }}/hello:$VERSION ghcr.io/${{ github.repository_owner }}/hello:latest
-          docker push ghcr.io/${{ github.repository_owner }}/hello:latest
+          docker push ghcr.io/${{ github.repository_owner }}/kis2020-demo-application:$VERSION
+          docker tag ghcr.io/${{ github.repository_owner }}/kis2020-demo-application:$VERSION ghcr.io/${{ github.repository_owner }}/kis2020-demo-application:latest
+          docker push ghcr.io/${{ github.repository_owner }}/kis2020-demo-application:latest

@@ -14,6 +14,6 @@ RUN make build
 
 FROM alpine:3.12 as runner
 
-COPY --from=builder /src/bin/hello /usr/local/bin
+COPY --from=builder /src/bin/kis2020-demo-application /usr/local/bin
 
-ENTRYPOINT ["hello"]
+ENTRYPOINT ["kis2020-demo-application"]
