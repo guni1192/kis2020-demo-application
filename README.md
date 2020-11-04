@@ -39,13 +39,13 @@ Here's the startup script.
 ### Docker Build in Local
 
 ```bash
-docker build -t ghcr.io/your-user-name/your-application-name .
+docker build -t ghcr.io/guni1192/kis2020-demo-application .
 ```
 
 ### Running on Docker
 
 ```bash
-docker run ghcr.io/your-user-name/your-application-name
+docker run --rm -p 8080:8080 ghcr.io/guni1192/kis2020-demo-application
 ```
 
 ### Local Build
